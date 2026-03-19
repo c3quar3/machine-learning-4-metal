@@ -1,0 +1,11 @@
+pip install pathlib librosa numpy scikit-learn keras pyserial pyaudio matplotlib pandas pandas
+直接复制上方的语句并在cmd中运行即可，若希望调用GPU进行训练，请在上一行的命令中去掉torch并运行，如已安装torch请先卸载
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+cuda11.8版本比较稳定，最新版容易出现问题，如果仍然报错请回退cuda版本
+
+第一次调用GPU会出现卡顿是因为cuda需要预热，为正常现象，非bug
+
+录制音频时请多次录制短时间音频，且尽量保证每段音频的持续时间一致， 否则可能出现转速分布不均的情况
+
+请使用py3.11版本运行
+

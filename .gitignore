@@ -1,0 +1,6 @@
+__pycache__/
+.vscode/
+data_origin/
+data_test/
+data_train/
+model/
